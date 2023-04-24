@@ -34,7 +34,8 @@ class MainActivity : AppCompatActivity() {
                     optionMiFare = true,
                     hostAPI = "192.168.1.117",
                     hostAPIPort = 8080,
-                    connectionProtocol = "HTTP"
+                    connectionProtocol = "HTTP",
+                    settingsPass = "Tenzor10"
                 )
                 preferenceDatastore.setDetails(terminalSettings)
             }
@@ -51,6 +52,7 @@ class MainActivity : AppCompatActivity() {
                         println(it.hostAPI)
                         println(it.hostAPIPort.toString())
                         println(it.connectionProtocol)
+                        println(it.settingsPass)
                     }
                 }
             }

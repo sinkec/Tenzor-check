@@ -7,5 +7,5 @@ class TerminalSettings(
     var optionMiFare : Boolean,
     var hostAPI : String,
     var hostAPIPort : Int,
-    var connectionProtocol : String){
-}
+    var connectionProtocol : String,
+    var settingsPass : String){}

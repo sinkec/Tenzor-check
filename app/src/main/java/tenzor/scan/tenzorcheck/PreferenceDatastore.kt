@@ -23,6 +23,7 @@ class PreferenceDatastore(context: Context) {
         var hostAPI = stringPreferencesKey("HOST_API")
         var hostAPIPort = intPreferencesKey("HOST_API_PORT")
         var connectionProtocol = stringPreferencesKey("CONNECTION_PROTOCOL")
+        var settingsPass = stringPreferencesKey("SETTINGS_PASS")
     }
 
     suspend fun setDetails(terminalSettings: TerminalSettings) {
@@ -34,6 +35,7 @@ class PreferenceDatastore(context: Context) {
             it[hostAPI] = terminalSettings.hostAPI
             it[hostAPIPort] = terminalSettings.hostAPIPort
             it[connectionProtocol] = terminalSettings.connectionProtocol
+            it[settingsPass] = terminalSettings.settingsPass
         }
     }
 
@@ -45,7 +47,8 @@ class PreferenceDatastore(context: Context) {
             optionMiFare = it[optionMiFare] ?: true,
             hostAPI = it[hostAPI] ?: "",
             hostAPIPort = it[hostAPIPort] ?: 0,
-            connectionProtocol = it[connectionProtocol] ?: "HTTP"
+            connectionProtocol = it[connectionProtocol] ?: "HTTP",
+            settingsPass = it[settingsPass] ?: ""
         )
     }
 }
