@@ -1,3 +1,30 @@
 <resources>
     <string name="app_name">TenzorCheck</string>
+    <string name="title_activity_settings">SettingsActivity</string>
+
+    <!-- Preference Titles -->
+    <string name="settings_dev_group">Terminal</string>
+    <string name="settings_srv_group">Strežnik</string>
+
+    <!-- Messages Preferences -->
+    <string name="terminal_ID_title">Ime terminala</string>
+
+    <string name="terminal_QR_title">QR bralnik</string>
+    <string name="QR_summary_on">Omogočen bralnik QR kode</string>
+    <string name="QR_summary_off">Onemogočen bralnik QR kode</string>
+
+    <string name="terminal_mifare_title">MiFare bralnik</string>
+    <string name="mifare_summary_on">Omogočen bralnik MiFare</string>
+    <string name="mifare_summary_off">Onemogočen bralnik MiFare</string>
+
+    <string name="server_host_title">Ime strežnika</string>
+    <string name="terminal_port_title">Vrata strežnika</string>
+
+    <string name="protocol_title">Protokol API POST zahteve</string>
+    <string name="protocol_summary">Http or Https</string>
+    <string name="nastavitve">Nastavitve</string>
+    <string name="action_settings_title">Settings</string>
+    <string name="set_settings">Set Settings</string>
+    <string name="get_settings">Get Settings</string>
+
 </resources>
