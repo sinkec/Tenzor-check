@@ -66,7 +66,11 @@ class MainActivity : AppCompatActivity() {
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
         when(item.itemId){
             R.id.menu_item_settings -> {
-
+                supportFragmentManager.beginTransaction()
+                    .replace(R.id.activityMain, SettingsFragment())
+                    .addToBackStack(null)
+                    .commit()
+                setSupportActionBar(null)
             }
         }
         return true
