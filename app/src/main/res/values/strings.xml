@@ -26,5 +26,6 @@
     <string name="action_settings_title">Settings</string>
     <string name="set_settings">Set Settings</string>
     <string name="get_settings">Get Settings</string>
+    <string name="settings">Nastavitve</string>
 
 </resources>
